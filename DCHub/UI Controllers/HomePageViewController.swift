@@ -4,15 +4,23 @@
 //
 //  Created by New Acc  on 26/1/21.
 //
-
+import youtube_ios_player_helper
 import UIKit
 
-class HomePageViewController: UIViewController {
+class HomePageViewController: UIViewController, YTPlayerViewDelegate {
 
+    @IBOutlet var PlayerView: YTPlayerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //Set the video to play automatically in line with the video ID
+        PlayerView.delegate = self
+        PlayerView.load(withVideoId: "pxc_igMzxXY", playerVars: ["playsinline": 1])
         // Do any additional setup after loading the view.
+    }
+    
+    func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
+        PlayerView.playVideo()
     }
     
 
