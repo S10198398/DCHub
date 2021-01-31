@@ -7,30 +7,82 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Categories View Controller-->
         <scene sceneID="pMU-zO-UaY">
             <objects>
-                <viewController id="6de-PY-es7" sceneMemberID="viewController">
+                <viewController id="6de-PY-es7" customClass="CategoriesViewController" customModule="DCHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="arv-gO-uPR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CS3-pS-kpL">
-                                <rect key="frame" x="186" y="438" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4W-Wk-xoE">
+                                <rect key="frame" x="20" y="182" width="178" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="7HC-GJ-HpF"/>
+                                    <constraint firstAttribute="width" constant="178" id="H36-OF-MTT"/>
+                                </constraints>
+                                <state key="normal" image="cat_top"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9d-7k-Rm8">
+                                <rect key="frame" x="20" y="368" width="178" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="aJJ-qp-dIY"/>
+                                    <constraint firstAttribute="height" constant="178" id="tpP-GC-yYM"/>
+                                </constraints>
+                                <state key="normal" image="cat_bottom"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWR-YV-9wg">
+                                <rect key="frame" x="216" y="368" width="178" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="4Fv-qG-yOh"/>
+                                    <constraint firstAttribute="width" constant="178" id="L1w-HA-Idc"/>
+                                </constraints>
+                                <state key="normal" image="cat_outerwear"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awD-MX-bNy">
+                                <rect key="frame" x="216" y="182" width="178" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="8DH-uF-ZQI"/>
+                                    <constraint firstAttribute="width" constant="178" id="cKc-GN-9VV"/>
+                                </constraints>
+                                <state key="normal" image="cat_hats"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geD-Y1-gUP">
+                                <rect key="frame" x="20" y="554" width="178" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="OrY-kv-Be9"/>
+                                    <constraint firstAttribute="height" constant="178" id="bjW-LG-GxU"/>
+                                </constraints>
+                                <state key="normal" image="cat_accessories"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LTQ-N9-Qfj"/>
                         <color key="backgroundColor" red="0.70588235294117641" green="1" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="w4W-Wk-xoE" firstAttribute="leading" secondItem="LTQ-N9-Qfj" secondAttribute="leading" constant="20" id="3Mf-uH-mE6"/>
+                            <constraint firstItem="LTQ-N9-Qfj" firstAttribute="trailing" secondItem="UWR-YV-9wg" secondAttribute="trailing" constant="20" id="65l-2Z-3sk"/>
+                            <constraint firstItem="awD-MX-bNy" firstAttribute="leading" secondItem="w4W-Wk-xoE" secondAttribute="trailing" constant="18" id="8cc-ve-vcz"/>
+                            <constraint firstItem="geD-Y1-gUP" firstAttribute="top" secondItem="N9d-7k-Rm8" secondAttribute="bottom" constant="8" symbolic="YES" id="Cv1-h3-Xwq"/>
+                            <constraint firstItem="awD-MX-bNy" firstAttribute="top" secondItem="LTQ-N9-Qfj" secondAttribute="top" constant="94" id="GNJ-z0-LUw"/>
+                            <constraint firstItem="geD-Y1-gUP" firstAttribute="top" secondItem="N9d-7k-Rm8" secondAttribute="bottom" constant="8" symbolic="YES" id="Gfe-O0-tus"/>
+                            <constraint firstItem="LTQ-N9-Qfj" firstAttribute="bottom" secondItem="geD-Y1-gUP" secondAttribute="bottom" constant="81" id="SOl-wF-MMZ"/>
+                            <constraint firstItem="awD-MX-bNy" firstAttribute="leading" secondItem="w4W-Wk-xoE" secondAttribute="trailing" constant="18" id="ZUp-Ry-GbO"/>
+                            <constraint firstItem="w4W-Wk-xoE" firstAttribute="top" secondItem="LTQ-N9-Qfj" secondAttribute="top" constant="94" id="aVR-gc-2Ja"/>
+                            <constraint firstItem="LTQ-N9-Qfj" firstAttribute="bottom" secondItem="UWR-YV-9wg" secondAttribute="bottom" constant="267" id="dy9-eq-c4R"/>
+                            <constraint firstItem="geD-Y1-gUP" firstAttribute="leading" secondItem="LTQ-N9-Qfj" secondAttribute="leading" constant="20" id="kKa-ll-59x"/>
+                            <constraint firstItem="LTQ-N9-Qfj" firstAttribute="trailing" secondItem="geD-Y1-gUP" secondAttribute="trailing" constant="216" id="kj0-tJ-dL3"/>
+                            <constraint firstItem="N9d-7k-Rm8" firstAttribute="leading" secondItem="LTQ-N9-Qfj" secondAttribute="leading" constant="20" id="vCu-jZ-58A"/>
+                            <constraint firstItem="N9d-7k-Rm8" firstAttribute="top" secondItem="w4W-Wk-xoE" secondAttribute="bottom" constant="8" symbolic="YES" id="vIT-8Q-rvk"/>
+                            <constraint firstItem="LTQ-N9-Qfj" firstAttribute="trailing" secondItem="awD-MX-bNy" secondAttribute="trailing" constant="20" id="wBf-8q-MGL"/>
+                            <constraint firstItem="UWR-YV-9wg" firstAttribute="leading" secondItem="N9d-7k-Rm8" secondAttribute="trailing" constant="18" id="zaV-T3-ohc"/>
+                            <constraint firstItem="UWR-YV-9wg" firstAttribute="leading" secondItem="N9d-7k-Rm8" secondAttribute="trailing" constant="18" id="zyc-gt-bBN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P4x-Zn-h0D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cR3-07-kX8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1141" y="148"/>
+            <point key="canvasLocation" x="1140.5797101449277" y="147.99107142857142"/>
         </scene>
         <!--categories-->
         <scene sceneID="OQu-h3-lhO">
@@ -54,6 +106,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cat_accessories" width="300" height="300"/>
+        <image name="cat_bottom" width="300" height="300"/>
+        <image name="cat_hats" width="300" height="300"/>
+        <image name="cat_outerwear" width="300" height="300"/>
+        <image name="cat_top" width="300" height="300"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>
