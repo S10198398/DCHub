@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vZ7-Se-0eQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page View Controller-->
+        <scene sceneID="dN3-DM-IQF">
+            <objects>
+                <viewController id="B0I-7J-8T5" customClass="HomePageViewController" customModule="DCHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sid-XY-AWO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RK-rb-k8R" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="170" width="414" height="227"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="01z-yj-8bA"/>
+                        <color key="backgroundColor" red="0.70588235294117641" green="1" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8RK-rb-k8R" firstAttribute="top" secondItem="01z-yj-8bA" secondAttribute="top" constant="82" id="8E2-Sw-wLW"/>
+                            <constraint firstItem="8RK-rb-k8R" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" id="HTV-rU-icj"/>
+                            <constraint firstItem="8RK-rb-k8R" firstAttribute="trailing" secondItem="01z-yj-8bA" secondAttribute="trailing" id="I9G-nx-cg5"/>
+                            <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="8RK-rb-k8R" secondAttribute="bottom" constant="416" id="xsf-cV-ryy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wJm-D6-6Hv"/>
+                    <connections>
+                        <outlet property="PlayerView" destination="8RK-rb-k8R" id="16A-8z-iZY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v0X-Nd-QQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679.71014492753625" y="51.5625"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="iGx-0X-UYa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vZ7-Se-0eQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="HomeIcon" id="Pna-3a-hFA"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tUO-q1-hzP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B0I-7J-8T5" kind="relationship" relationship="rootViewController" id="hcP-7w-4Pl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Zd-bX-moi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230.43478260869566" y="51.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HomeIcon" width="24" height="24"/>
+    </resources>
+</document>

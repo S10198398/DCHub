@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0EC7B525C718F600334C73 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0EC7B425C718F600334C73 /* Home.storyboard */; };
+		0E0EC7BD25C7328900334C73 /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0EC7BC25C7328900334C73 /* Categories.storyboard */; };
 		45BD9E8992B76DC652003089 /* Pods_DCHub_DCHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD8D725F8D7716B53DED6FB /* Pods_DCHub_DCHubUITests.framework */; };
 		6D15518D1751DCB4D1CF040A /* Pods_DCHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D229559773217FEEBAA9E924 /* Pods_DCHubTests.framework */; };
 		764B19E70249F32802DFE6AB /* Pods_DCHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2C7BF75C3B88A2A8A53EB2 /* Pods_DCHub.framework */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		028C1AECB1CCCAF6772C9A72 /* Pods-DCHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHubTests.debug.xcconfig"; path = "Target Support Files/Pods-DCHubTests/Pods-DCHubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E0EC7B425C718F600334C73 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		0E0EC7BC25C7328900334C73 /* Categories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Categories.storyboard; sourceTree = "<group>"; };
 		18A46F945D6B95F5B3336C69 /* Pods-DCHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHubTests.release.xcconfig"; path = "Target Support Files/Pods-DCHubTests/Pods-DCHubTests.release.xcconfig"; sourceTree = "<group>"; };
 		1A2C7BF75C3B88A2A8A53EB2 /* Pods_DCHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9DFB0C6A80CD9B4E77BC8D /* Pods-DCHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHub.debug.xcconfig"; path = "Target Support Files/Pods-DCHub/Pods-DCHub.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +115,6 @@
 				028C1AECB1CCCAF6772C9A72 /* Pods-DCHubTests.debug.xcconfig */,
 				18A46F945D6B95F5B3336C69 /* Pods-DCHubTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,6 +159,8 @@
 				F15A6B8525C0445D00DD2558 /* AppDelegate.swift */,
 				F15A6B8725C0445D00DD2558 /* SceneDelegate.swift */,
 				F15A6B8B25C0445D00DD2558 /* Main.storyboard */,
+				0E0EC7B425C718F600334C73 /* Home.storyboard */,
+				0E0EC7BC25C7328900334C73 /* Categories.storyboard */,
 				F15A6B9125C0445E00DD2558 /* Assets.xcassets */,
 				F15A6B9325C0445E00DD2558 /* LaunchScreen.storyboard */,
 				F15A6B9625C0445E00DD2558 /* Info.plist */,
@@ -300,9 +305,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0EC7BD25C7328900334C73 /* Categories.storyboard in Resources */,
 				F15A6B9525C0445E00DD2558 /* LaunchScreen.storyboard in Resources */,
 				F15A6B9225C0445E00DD2558 /* Assets.xcassets in Resources */,
 				F15A6B8D25C0445D00DD2558 /* Main.storyboard in Resources */,
+				0E0EC7B525C718F600334C73 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
