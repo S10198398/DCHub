@@ -25,6 +25,7 @@
 		F15A6B9525C0445E00DD2558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15A6B9325C0445E00DD2558 /* LaunchScreen.storyboard */; };
 		F15A6BA025C0445E00DD2558 /* DCHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A6B9F25C0445E00DD2558 /* DCHubTests.swift */; };
 		F15A6BAB25C0445E00DD2558 /* DCHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A6BAA25C0445E00DD2558 /* DCHubUITests.swift */; };
+		F175429E25C7FC94007AB864 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F175429D25C7FC94007AB864 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		F15A6BA625C0445E00DD2558 /* DCHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15A6BAA25C0445E00DD2558 /* DCHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCHubUITests.swift; sourceTree = "<group>"; };
 		F15A6BAC25C0445E00DD2558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F175429D25C7FC94007AB864 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,14 +157,11 @@
 		F15A6B8425C0445D00DD2558 /* DCHub */ = {
 			isa = PBXGroup;
 			children = (
+				F175429125C7FC20007AB864 /* Storyboards */,
 				F130D20325C05924003246E9 /* UI Controllers */,
 				F15A6B8525C0445D00DD2558 /* AppDelegate.swift */,
 				F15A6B8725C0445D00DD2558 /* SceneDelegate.swift */,
-				F15A6B8B25C0445D00DD2558 /* Main.storyboard */,
-				0E0EC7B425C718F600334C73 /* Home.storyboard */,
-				0E0EC7BC25C7328900334C73 /* Categories.storyboard */,
 				F15A6B9125C0445E00DD2558 /* Assets.xcassets */,
-				F15A6B9325C0445E00DD2558 /* LaunchScreen.storyboard */,
 				F15A6B9625C0445E00DD2558 /* Info.plist */,
 				F15A6B8E25C0445D00DD2558 /* DCHub.xcdatamodeld */,
 			);
@@ -185,6 +184,18 @@
 				F15A6BAC25C0445E00DD2558 /* Info.plist */,
 			);
 			path = DCHubUITests;
+			sourceTree = "<group>";
+		};
+		F175429125C7FC20007AB864 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F15A6B8B25C0445D00DD2558 /* Main.storyboard */,
+				0E0EC7B425C718F600334C73 /* Home.storyboard */,
+				0E0EC7BC25C7328900334C73 /* Categories.storyboard */,
+				F15A6B9325C0445E00DD2558 /* LaunchScreen.storyboard */,
+				F175429D25C7FC94007AB864 /* Profile.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		F35322FE72AD13930DCE670E /* Frameworks */ = {
@@ -305,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F175429E25C7FC94007AB864 /* Profile.storyboard in Resources */,
 				0E0EC7BD25C7328900334C73 /* Categories.storyboard in Resources */,
 				F15A6B9525C0445E00DD2558 /* LaunchScreen.storyboard in Resources */,
 				F15A6B9225C0445E00DD2558 /* Assets.xcassets in Resources */,
