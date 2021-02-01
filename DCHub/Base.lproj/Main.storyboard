@@ -34,8 +34,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="Sbq-jg-eCn" kind="relationship" relationship="viewControllers" id="CKd-XX-VN5"/>
-                        <segue destination="NI8-VG-ZoU" kind="relationship" relationship="viewControllers" id="omm-uc-zFb"/>
                         <segue destination="sXB-Xs-oHj" kind="relationship" relationship="viewControllers" id="adC-gz-Ql2"/>
+                        <segue destination="NI8-VG-ZoU" kind="relationship" relationship="viewControllers" id="omm-uc-zFb"/>
                         <segue destination="ZCa-Pk-cVy" kind="relationship" relationship="viewControllers" id="Q8u-Et-1zH"/>
                         <segue destination="cZW-ry-EL7" kind="relationship" relationship="viewControllers" id="zdk-VV-yll"/>
                     </connections>
