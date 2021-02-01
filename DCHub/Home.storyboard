@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RK-rb-k8R" customClass="YTPlayerView">
-                                <rect key="frame" x="0.0" y="248" width="414" height="227"/>
+                                <rect key="frame" x="0.0" y="223" width="414" height="227"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="9v1-x8-v2S"/>
@@ -24,7 +24,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEF-dz-80Y">
-                                <rect key="frame" x="147" y="108" width="120" height="120"/>
+                                <rect key="frame" x="147" y="95" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="Mft-ow-wiz"/>
                                     <constraint firstAttribute="width" constant="120" id="gBo-Qr-MjJ"/>
@@ -34,7 +34,7 @@
                                 <state key="normal" image="logo"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEATURED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-oC-vrj">
-                                <rect key="frame" x="0.0" y="473" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="447" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="1" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -44,18 +44,18 @@
                         <viewLayoutGuide key="safeArea" id="01z-yj-8bA"/>
                         <color key="backgroundColor" red="0.70588235294117641" green="1" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="PU4-oC-vrj" secondAttribute="bottom" constant="290" id="1ah-xW-aAt"/>
-                            <constraint firstItem="8RK-rb-k8R" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="20" id="21o-4h-MX8"/>
+                            <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="PU4-oC-vrj" secondAttribute="bottom" constant="316" id="1ah-xW-aAt"/>
+                            <constraint firstItem="8RK-rb-k8R" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="8" id="21o-4h-MX8"/>
                             <constraint firstItem="01z-yj-8bA" firstAttribute="trailing" secondItem="yEF-dz-80Y" secondAttribute="trailing" constant="147" id="7sq-Gd-rhh"/>
-                            <constraint firstItem="yEF-dz-80Y" firstAttribute="top" secondItem="01z-yj-8bA" secondAttribute="top" constant="20" id="9YV-Pq-Afq"/>
+                            <constraint firstItem="yEF-dz-80Y" firstAttribute="top" secondItem="01z-yj-8bA" secondAttribute="top" constant="7" id="9YV-Pq-Afq"/>
                             <constraint firstItem="PU4-oC-vrj" firstAttribute="trailing" secondItem="01z-yj-8bA" secondAttribute="trailing" id="9bU-LN-pfo"/>
-                            <constraint firstItem="8RK-rb-k8R" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="20" id="CtB-I7-mUk"/>
-                            <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="8RK-rb-k8R" secondAttribute="bottom" constant="338" id="QJs-B3-vDP"/>
-                            <constraint firstItem="8RK-rb-k8R" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="20" id="XJb-uc-Z5H"/>
+                            <constraint firstItem="8RK-rb-k8R" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="8" id="CtB-I7-mUk"/>
+                            <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="8RK-rb-k8R" secondAttribute="bottom" constant="363" id="QJs-B3-vDP"/>
+                            <constraint firstItem="8RK-rb-k8R" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="8" id="XJb-uc-Z5H"/>
                             <constraint firstItem="PU4-oC-vrj" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" id="XJl-0g-rEn"/>
                             <constraint firstItem="yEF-dz-80Y" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" constant="147" id="YMl-1v-iVO"/>
-                            <constraint firstItem="PU4-oC-vrj" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="245" id="dMb-Vn-Ev3"/>
-                            <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="8RK-rb-k8R" secondAttribute="bottom" constant="338" id="kEk-DZ-f2i"/>
+                            <constraint firstItem="PU4-oC-vrj" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="232" id="dMb-Vn-Ev3"/>
+                            <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="8RK-rb-k8R" secondAttribute="bottom" constant="363" id="kEk-DZ-f2i"/>
                             <constraint firstItem="8RK-rb-k8R" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" id="mb5-3m-Gf7"/>
                             <constraint firstItem="8RK-rb-k8R" firstAttribute="trailing" secondItem="01z-yj-8bA" secondAttribute="trailing" id="vSN-FR-i5D"/>
                         </constraints>
