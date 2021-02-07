@@ -39,15 +39,15 @@ class HomePageViewController: UIViewController, YTPlayerViewDelegate, UITableVie
         table.delegate = self
         table.dataSource = self
         
-        models.append(Model(text: "First", imageName: "shop_top3"))
+        models.append(Model(text: "Longsleeve", imageName: "shop_top3"))
         
-        models.append(Model(text: "Second", imageName: "shop_bottoms-1"))
+        models.append(Model(text: "Sweatpants", imageName: "shop_bottoms-1"))
         
-        models.append(Model(text: "Third", imageName: "shop_outerwear-1"))
+        models.append(Model(text: "Midknight", imageName: "shop_outerwear-1"))
         
-        models.append(Model(text: "Fourth", imageName: "shop_caps-1"))
+        models.append(Model(text: "bucket hat", imageName: "shop_caps-1"))
         
-        models.append(Model(text: "Fifth", imageName: "shop_accessories-1"))
+        models.append(Model(text: "mask", imageName: "shop_accessories-1"))
     }
     
     //Table for featured returning rows according to number of items
