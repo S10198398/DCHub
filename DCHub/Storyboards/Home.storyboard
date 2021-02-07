@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,18 +35,24 @@
                                 <state key="normal" image="logo"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEATURED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-oC-vrj">
-                                <rect key="frame" x="0.0" y="447" width="414" height="50"/>
-                                <color key="backgroundColor" red="0.98039215686274506" green="1" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="447" width="414" height="77"/>
+                                <color key="backgroundColor" red="0.98431372549019602" green="0.99607843137254903" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EX6-4C-lW7">
+                                <rect key="frame" x="0.0" y="523" width="414" height="290"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="01z-yj-8bA"/>
                         <color key="backgroundColor" red="0.70588235294117641" green="1" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="PU4-oC-vrj" secondAttribute="bottom" constant="316" id="1ah-xW-aAt"/>
+                            <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="PU4-oC-vrj" secondAttribute="bottom" constant="289" id="1ah-xW-aAt"/>
                             <constraint firstItem="8RK-rb-k8R" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="8" id="21o-4h-MX8"/>
+                            <constraint firstItem="EX6-4C-lW7" firstAttribute="trailing" secondItem="01z-yj-8bA" secondAttribute="trailing" id="51w-Dq-g4H"/>
+                            <constraint firstItem="EX6-4C-lW7" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" id="7s1-Wa-mfI"/>
                             <constraint firstItem="01z-yj-8bA" firstAttribute="trailing" secondItem="yEF-dz-80Y" secondAttribute="trailing" constant="147" id="7sq-Gd-rhh"/>
                             <constraint firstItem="yEF-dz-80Y" firstAttribute="top" secondItem="01z-yj-8bA" secondAttribute="top" constant="7" id="9YV-Pq-Afq"/>
                             <constraint firstItem="PU4-oC-vrj" firstAttribute="trailing" secondItem="01z-yj-8bA" secondAttribute="trailing" id="9bU-LN-pfo"/>
@@ -54,15 +61,18 @@
                             <constraint firstItem="8RK-rb-k8R" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="8" id="XJb-uc-Z5H"/>
                             <constraint firstItem="PU4-oC-vrj" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" id="XJl-0g-rEn"/>
                             <constraint firstItem="yEF-dz-80Y" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" constant="147" id="YMl-1v-iVO"/>
+                            <constraint firstItem="EX6-4C-lW7" firstAttribute="bottom" secondItem="01z-yj-8bA" secondAttribute="bottom" id="b4l-Ds-Zr5"/>
                             <constraint firstItem="PU4-oC-vrj" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="232" id="dMb-Vn-Ev3"/>
                             <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="8RK-rb-k8R" secondAttribute="bottom" constant="363" id="kEk-DZ-f2i"/>
                             <constraint firstItem="8RK-rb-k8R" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" id="mb5-3m-Gf7"/>
+                            <constraint firstItem="EX6-4C-lW7" firstAttribute="top" secondItem="8RK-rb-k8R" secondAttribute="bottom" constant="73" id="pAm-Wc-rQu"/>
                             <constraint firstItem="8RK-rb-k8R" firstAttribute="trailing" secondItem="01z-yj-8bA" secondAttribute="trailing" id="vSN-FR-i5D"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wJm-D6-6Hv"/>
                     <connections>
                         <outlet property="PlayerView" destination="8RK-rb-k8R" id="16A-8z-iZY"/>
+                        <outlet property="table" destination="EX6-4C-lW7" id="uoo-xP-JYK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0X-Nd-QQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -93,5 +103,8 @@
     <resources>
         <image name="HomeIcon" width="24" height="24"/>
         <image name="logo" width="300" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
