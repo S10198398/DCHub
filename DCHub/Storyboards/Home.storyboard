@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RK-rb-k8R" customClass="YTPlayerView">
-                                <rect key="frame" x="0.0" y="223" width="414" height="227"/>
+                                <rect key="frame" x="0.0" y="179" width="414" height="271"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="9v1-x8-v2S"/>
@@ -25,7 +25,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEF-dz-80Y">
-                                <rect key="frame" x="147" y="95" width="120" height="120"/>
+                                <rect key="frame" x="147" y="51" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="Mft-ow-wiz"/>
                                     <constraint firstAttribute="width" constant="120" id="gBo-Qr-MjJ"/>
@@ -35,7 +35,7 @@
                                 <state key="normal" image="logo"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEATURED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-oC-vrj">
-                                <rect key="frame" x="0.0" y="447" width="414" height="77"/>
+                                <rect key="frame" x="0.0" y="403" width="414" height="121"/>
                                 <color key="backgroundColor" red="0.98431372549019602" green="0.99607843137254903" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -82,12 +82,11 @@
         <!--Home-->
         <scene sceneID="iGx-0X-UYa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vZ7-Se-0eQ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="vZ7-Se-0eQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="HomeIcon" id="Pna-3a-hFA"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tUO-q1-hzP">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
