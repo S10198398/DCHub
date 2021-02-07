@@ -124,22 +124,22 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
-		0E18074C25CFA0CF0077F220 /* Collection cell */ = {
+		0E18074C25CFA0CF0077F220 /* Home Collection cell */ = {
 			isa = PBXGroup;
 			children = (
 				0E18076225CFE1C10077F220 /* MyCollectionViewCell.swift */,
 				0E18076325CFE1C10077F220 /* MyCollectionViewCell.xib */,
 			);
-			path = "Collection cell";
+			path = "Home Collection cell";
 			sourceTree = "<group>";
 		};
-		0E18074D25CFA0E60077F220 /* Table cell */ = {
+		0E18074D25CFA0E60077F220 /* Home Table cell */ = {
 			isa = PBXGroup;
 			children = (
 				0E18074E25CFA12D0077F220 /* CollectionTableViewCell.swift */,
 				0E18074F25CFA12D0077F220 /* CollectionTableViewCell.xib */,
 			);
-			path = "Table cell";
+			path = "Home Table cell";
 			sourceTree = "<group>";
 		};
 		D8BB27260C4BF2B061DFD45C /* Pods */ = {
@@ -194,8 +194,8 @@
 			children = (
 				F175429125C7FC20007AB864 /* Storyboards */,
 				F130D20325C05924003246E9 /* UI Controllers */,
-				0E18074C25CFA0CF0077F220 /* Collection cell */,
-				0E18074D25CFA0E60077F220 /* Table cell */,
+				0E18074C25CFA0CF0077F220 /* Home Collection cell */,
+				0E18074D25CFA0E60077F220 /* Home Table cell */,
 				0E18074925CFA04B0077F220 /* Delegates */,
 				F15A6B9125C0445E00DD2558 /* Assets.xcassets */,
 				F15A6B9625C0445E00DD2558 /* Info.plist */,

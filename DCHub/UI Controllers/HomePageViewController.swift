@@ -43,9 +43,9 @@ class HomePageViewController: UIViewController, YTPlayerViewDelegate, UITableVie
         
         models.append(Model(text: "Sweatpants", imageName: "shop_bottoms-1"))
         
-        models.append(Model(text: "Midknight", imageName: "shop_outerwear-1"))
+        models.append(Model(text: "Midknight Jacket", imageName: "shop_outerwear-1"))
         
-        models.append(Model(text: "bucket hat", imageName: "shop_caps-1"))
+        models.append(Model(text: "Kinjaz hat", imageName: "shop_caps-1"))
         
         models.append(Model(text: "mask", imageName: "shop_accessories-1"))
     }
