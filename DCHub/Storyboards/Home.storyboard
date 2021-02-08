@@ -34,22 +34,22 @@
                                 </constraints>
                                 <state key="normal" image="logo"/>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EX6-4C-lW7">
+                                <rect key="frame" x="0.0" y="523" width="414" height="290"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEATURED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-oC-vrj">
-                                <rect key="frame" x="0.0" y="403" width="414" height="121"/>
+                                <rect key="frame" x="0.0" y="448" width="414" height="77"/>
                                 <color key="backgroundColor" red="0.98431372549019602" green="0.99607843137254903" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EX6-4C-lW7">
-                                <rect key="frame" x="0.0" y="523" width="414" height="290"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="01z-yj-8bA"/>
                         <color key="backgroundColor" red="0.70588235294117641" green="1" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="PU4-oC-vrj" secondAttribute="bottom" constant="289" id="1ah-xW-aAt"/>
+                            <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="PU4-oC-vrj" secondAttribute="bottom" constant="288" id="1ah-xW-aAt"/>
                             <constraint firstItem="8RK-rb-k8R" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="8" id="21o-4h-MX8"/>
                             <constraint firstItem="EX6-4C-lW7" firstAttribute="trailing" secondItem="01z-yj-8bA" secondAttribute="trailing" id="51w-Dq-g4H"/>
                             <constraint firstItem="EX6-4C-lW7" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" id="7s1-Wa-mfI"/>
@@ -62,7 +62,7 @@
                             <constraint firstItem="PU4-oC-vrj" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" id="XJl-0g-rEn"/>
                             <constraint firstItem="yEF-dz-80Y" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" constant="147" id="YMl-1v-iVO"/>
                             <constraint firstItem="EX6-4C-lW7" firstAttribute="bottom" secondItem="01z-yj-8bA" secondAttribute="bottom" id="b4l-Ds-Zr5"/>
-                            <constraint firstItem="PU4-oC-vrj" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="232" id="dMb-Vn-Ev3"/>
+                            <constraint firstItem="PU4-oC-vrj" firstAttribute="top" secondItem="yEF-dz-80Y" secondAttribute="bottom" constant="277" id="dMb-Vn-Ev3"/>
                             <constraint firstItem="01z-yj-8bA" firstAttribute="bottom" secondItem="8RK-rb-k8R" secondAttribute="bottom" constant="363" id="kEk-DZ-f2i"/>
                             <constraint firstItem="8RK-rb-k8R" firstAttribute="leading" secondItem="01z-yj-8bA" secondAttribute="leading" id="mb5-3m-Gf7"/>
                             <constraint firstItem="EX6-4C-lW7" firstAttribute="top" secondItem="8RK-rb-k8R" secondAttribute="bottom" constant="73" id="pAm-Wc-rQu"/>
