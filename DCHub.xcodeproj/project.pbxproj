@@ -13,6 +13,11 @@
 		0E18075125CFA12D0077F220 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E18074F25CFA12D0077F220 /* CollectionTableViewCell.xib */; };
 		0E18076425CFE1C10077F220 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18076225CFE1C10077F220 /* MyCollectionViewCell.swift */; };
 		0E18076525CFE1C10077F220 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E18076325CFE1C10077F220 /* MyCollectionViewCell.xib */; };
+		0E18084425D162240077F220 /* TopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18084325D162240077F220 /* TopsViewController.swift */; };
+		0E18084925D1623D0077F220 /* HatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18084825D1623D0077F220 /* HatsViewController.swift */; };
+		0E18084E25D1624F0077F220 /* BottomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18084D25D1624F0077F220 /* BottomsViewController.swift */; };
+		0E18085325D1625D0077F220 /* OuterwearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18085225D1625D0077F220 /* OuterwearViewController.swift */; };
+		0E18085825D1626C0077F220 /* AccessoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18085725D1626C0077F220 /* AccessoriesViewController.swift */; };
 		45BD9E8992B76DC652003089 /* Pods_DCHub_DCHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD8D725F8D7716B53DED6FB /* Pods_DCHub_DCHubUITests.framework */; };
 		6D15518D1751DCB4D1CF040A /* Pods_DCHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D229559773217FEEBAA9E924 /* Pods_DCHubTests.framework */; };
 		764B19E70249F32802DFE6AB /* Pods_DCHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2C7BF75C3B88A2A8A53EB2 /* Pods_DCHub.framework */; };
@@ -57,6 +62,11 @@
 		0E18074F25CFA12D0077F220 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		0E18076225CFE1C10077F220 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		0E18076325CFE1C10077F220 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		0E18084325D162240077F220 /* TopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopsViewController.swift; sourceTree = "<group>"; };
+		0E18084825D1623D0077F220 /* HatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatsViewController.swift; sourceTree = "<group>"; };
+		0E18084D25D1624F0077F220 /* BottomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomsViewController.swift; sourceTree = "<group>"; };
+		0E18085225D1625D0077F220 /* OuterwearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuterwearViewController.swift; sourceTree = "<group>"; };
+		0E18085725D1626C0077F220 /* AccessoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoriesViewController.swift; sourceTree = "<group>"; };
 		18A46F945D6B95F5B3336C69 /* Pods-DCHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHubTests.release.xcconfig"; path = "Target Support Files/Pods-DCHubTests/Pods-DCHubTests.release.xcconfig"; sourceTree = "<group>"; };
 		1A2C7BF75C3B88A2A8A53EB2 /* Pods_DCHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9DFB0C6A80CD9B4E77BC8D /* Pods-DCHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHub.debug.xcconfig"; path = "Target Support Files/Pods-DCHub/Pods-DCHub.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +173,11 @@
 				F130D22625C05BF5003246E9 /* LocalPicksViewController.swift */,
 				F130D22B25C05C18003246E9 /* OurPicksViewController.swift */,
 				F130D23025C05C73003246E9 /* ProfileViewController.swift */,
+				0E18084325D162240077F220 /* TopsViewController.swift */,
+				0E18084825D1623D0077F220 /* HatsViewController.swift */,
+				0E18084D25D1624F0077F220 /* BottomsViewController.swift */,
+				0E18085225D1625D0077F220 /* OuterwearViewController.swift */,
+				0E18085725D1626C0077F220 /* AccessoriesViewController.swift */,
 			);
 			path = "UI Controllers";
 			sourceTree = "<group>";
@@ -487,12 +502,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E18085825D1626C0077F220 /* AccessoriesViewController.swift in Sources */,
 				F15A6B9025C0445D00DD2558 /* DCHub.xcdatamodeld in Sources */,
 				F15A6B8625C0445D00DD2558 /* AppDelegate.swift in Sources */,
+				0E18085325D1625D0077F220 /* OuterwearViewController.swift in Sources */,
+				0E18084925D1623D0077F220 /* HatsViewController.swift in Sources */,
 				F130D21D25C05BB8003246E9 /* CategoriesViewController.swift in Sources */,
 				F130D22C25C05C18003246E9 /* OurPicksViewController.swift in Sources */,
+				0E18084425D162240077F220 /* TopsViewController.swift in Sources */,
 				F130D22225C05BD9003246E9 /* HomePageViewController.swift in Sources */,
 				F15A6B8825C0445D00DD2558 /* SceneDelegate.swift in Sources */,
+				0E18084E25D1624F0077F220 /* BottomsViewController.swift in Sources */,
 				0E18076425CFE1C10077F220 /* MyCollectionViewCell.swift in Sources */,
 				F130D23125C05C73003246E9 /* ProfileViewController.swift in Sources */,
 				0E18075025CFA12D0077F220 /* CollectionTableViewCell.swift in Sources */,
