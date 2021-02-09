@@ -6,7 +6,10 @@ target 'DCHub' do
   use_frameworks!
 
   # Pods for DCHub
-pod 'youtube-ios-player-helper'
+  pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Firestore'
+  pod 'youtube-ios-player-helper'
 
   target 'DCHubTests' do
     inherit! :search_paths

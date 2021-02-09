@@ -19,11 +19,33 @@
                         <segue destination="sXB-Xs-oHj" kind="relationship" relationship="viewControllers" id="adC-gz-Ql2"/>
                         <segue destination="NI8-VG-ZoU" kind="relationship" relationship="viewControllers" id="omm-uc-zFb"/>
                         <segue destination="4UH-Vh-hIn" kind="relationship" relationship="viewControllers" id="7lb-vx-dHl"/>
+                        <segue destination="nRl-zR-u8X" kind="relationship" relationship="viewControllers" id="W6F-TQ-Rxj"/>
+                        <segue destination="9fa-hz-ULD" kind="relationship" relationship="viewControllers" id="tUE-WX-82A"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLQ-6W-28O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2706" y="-1685"/>
+        </scene>
+        <!--LocalPicksVC-->
+        <scene sceneID="5cP-jN-QvC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LocalPicks" referencedIdentifier="LocalPicksVC" id="9fa-hz-ULD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="wGq-Dk-h1l"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R01-us-Cag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3341" y="-1201"/>
+        </scene>
+        <!--OurPicksVC-->
+        <scene sceneID="7wf-w9-kHR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OurPicks" referencedIdentifier="OurPicksVC" id="nRl-zR-u8X" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="2EQ-bH-TFM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yRt-wN-OAg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3040" y="-1165"/>
         </scene>
         <!--Categories-->
         <scene sceneID="Fqg-hl-QtU">

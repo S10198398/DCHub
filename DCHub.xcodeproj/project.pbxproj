@@ -55,6 +55,13 @@
 		F15A6BA025C0445E00DD2558 /* DCHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A6B9F25C0445E00DD2558 /* DCHubTests.swift */; };
 		F15A6BAB25C0445E00DD2558 /* DCHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A6BAA25C0445E00DD2558 /* DCHubUITests.swift */; };
 		F175429E25C7FC94007AB864 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F175429D25C7FC94007AB864 /* Profile.storyboard */; };
+		F1E98E7825D29AF00095A7A6 /* OurPicks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E98E7725D29AF00095A7A6 /* OurPicks.storyboard */; };
+		F1E98E7D25D29AF90095A7A6 /* LocalPicks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E98E7C25D29AF90095A7A6 /* LocalPicks.storyboard */; };
+		F1F9245C25D2B1DE000A311F /* Dancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F9245B25D2B1DE000A311F /* Dancer.swift */; };
+		F1F9246225D2B1F8000A311F /* CarousellCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F9246125D2B1F8000A311F /* CarousellCellCollectionViewCell.swift */; };
+		F1F9246925D2B200000A311F /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F9246725D2B200000A311F /* VideoPlayer.swift */; };
+		F1F9246A25D2B200000A311F /* VideoPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F9246825D2B200000A311F /* VideoPlayer.xib */; };
+		F1F9246F25D2C297000A311F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1F9246E25D2C297000A311F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +142,13 @@
 		F15A6BAA25C0445E00DD2558 /* DCHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCHubUITests.swift; sourceTree = "<group>"; };
 		F15A6BAC25C0445E00DD2558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F175429D25C7FC94007AB864 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		F1E98E7725D29AF00095A7A6 /* OurPicks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OurPicks.storyboard; sourceTree = "<group>"; };
+		F1E98E7C25D29AF90095A7A6 /* LocalPicks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocalPicks.storyboard; sourceTree = "<group>"; };
+		F1F9245B25D2B1DE000A311F /* Dancer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dancer.swift; sourceTree = "<group>"; };
+		F1F9246125D2B1F8000A311F /* CarousellCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarousellCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		F1F9246725D2B200000A311F /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		F1F9246825D2B200000A311F /* VideoPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayer.xib; sourceTree = "<group>"; };
+		F1F9246E25D2C297000A311F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +351,7 @@
 		F15A6B8425C0445D00DD2558 /* DCHub */ = {
 			isa = PBXGroup;
 			children = (
+				F1F9245725D2B1CD000A311F /* Models */,
 				F175429125C7FC20007AB864 /* Storyboards */,
 				F130D20325C05924003246E9 /* UI Controllers */,
 				0E18086825D188200077F220 /* Accessories Collection cell */,
@@ -355,6 +370,7 @@
 				F15A6B9125C0445E00DD2558 /* Assets.xcassets */,
 				F15A6B9625C0445E00DD2558 /* Info.plist */,
 				F15A6B8E25C0445D00DD2558 /* DCHub.xcdatamodeld */,
+				F1F9246E25D2C297000A311F /* GoogleService-Info.plist */,
 			);
 			path = DCHub;
 			sourceTree = "<group>";
@@ -385,8 +401,37 @@
 				0E0EC7BC25C7328900334C73 /* Categories.storyboard */,
 				F15A6B9325C0445E00DD2558 /* LaunchScreen.storyboard */,
 				F175429D25C7FC94007AB864 /* Profile.storyboard */,
+				F1E98E7725D29AF00095A7A6 /* OurPicks.storyboard */,
+				F1E98E7C25D29AF90095A7A6 /* LocalPicks.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F1F9245725D2B1CD000A311F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1F9246625D2B200000A311F /* VideoPlayer */,
+				F1F9246025D2B1F8000A311F /* CarousellCell */,
+				F1F9245B25D2B1DE000A311F /* Dancer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1F9246025D2B1F8000A311F /* CarousellCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1F9246125D2B1F8000A311F /* CarousellCellCollectionViewCell.swift */,
+			);
+			path = CarousellCell;
+			sourceTree = "<group>";
+		};
+		F1F9246625D2B200000A311F /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F1F9246725D2B200000A311F /* VideoPlayer.swift */,
+				F1F9246825D2B200000A311F /* VideoPlayer.xib */,
+			);
+			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
 		F35322FE72AD13930DCE670E /* Frameworks */ = {
@@ -509,6 +554,7 @@
 			files = (
 				0E1808AA25D189CB0077F220 /* AccessoriesTableViewCell.xib in Resources */,
 				0E18075125CFA12D0077F220 /* CollectionTableViewCell.xib in Resources */,
+				F1E98E7825D29AF00095A7A6 /* OurPicks.storyboard in Resources */,
 				0E18089525D189470077F220 /* BottomsCollectionViewCell.xib in Resources */,
 				0E18089C25D1898D0077F220 /* OuterwearTableViewCell.xib in Resources */,
 				F175429E25C7FC94007AB864 /* Profile.storyboard in Resources */,
@@ -524,7 +570,10 @@
 				F15A6B9225C0445E00DD2558 /* Assets.xcassets in Resources */,
 				F15A6B8D25C0445D00DD2558 /* Main.storyboard in Resources */,
 				0E18076525CFE1C10077F220 /* MyCollectionViewCell.xib in Resources */,
+				F1F9246A25D2B200000A311F /* VideoPlayer.xib in Resources */,
+				F1F9246F25D2C297000A311F /* GoogleService-Info.plist in Resources */,
 				0E0EC7B525C718F600334C73 /* Home.storyboard in Resources */,
+				F1E98E7D25D29AF90095A7A6 /* LocalPicks.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,12 +701,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F9246925D2B200000A311F /* VideoPlayer.swift in Sources */,
 				0E1808A925D189CB0077F220 /* AccessoriesTableViewCell.swift in Sources */,
 				0E18085825D1626C0077F220 /* AccessoriesViewController.swift in Sources */,
 				F15A6B9025C0445D00DD2558 /* DCHub.xcdatamodeld in Sources */,
+				F1F9246225D2B1F8000A311F /* CarousellCellCollectionViewCell.swift in Sources */,
 				F15A6B8625C0445D00DD2558 /* AppDelegate.swift in Sources */,
 				0E18085325D1625D0077F220 /* OuterwearViewController.swift in Sources */,
 				0E1808B025D18A060077F220 /* AccessoriesCollectionViewCell.swift in Sources */,
+				F1F9245C25D2B1DE000A311F /* Dancer.swift in Sources */,
 				0E18089425D189470077F220 /* BottomsCollectionViewCell.swift in Sources */,
 				0E18084925D1623D0077F220 /* HatsViewController.swift in Sources */,
 				F130D21D25C05BB8003246E9 /* CategoriesViewController.swift in Sources */,
