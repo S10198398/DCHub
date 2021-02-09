@@ -25,10 +25,23 @@ class Dancer
         
     }
     
+    
+    
     static func fetchCarousell()->[Dancer]
     {
-        let db = Firestore.firestore()
+        func downloadImage(urlImage : String?, complete: ((UIImage?)->Void)? = nil){
+
+            let url = URL(string: urlImage!)
+            let urlRequest = URLRequest(url: url!)
+            let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+                if let data = data {
+                   complete?(UIImage(data: data))
+                }
+            }
+            task.resume()
+        }
         var dancers : [Dancer] = []
+        let db = Firestore.firestore()
         db.collection("Carousell").getDocuments { (querySnapshot, err )in
             if let err = err{
                 print("Error getting documents: \(err)")
@@ -42,22 +55,19 @@ class Dancer
                     let dancerName = data["dancerName"] as? String
                     let dancerVideo = data["dancerVideo"] as? String
                     let description = data["description"] as? String
-                    
-                    let url = URL(string: dancerLogo!)
-                    if let data = try? Data(contentsOf: url!)
+                    var dancerImage = UIImage()
+                    downloadImage(urlImage: dancerLogo) { (image) in
+                        if let image = image
                         {
-                        let image: UIImage = UIImage(data: data)!
-                        let dancer = Dancer(dancerLogo: image, dancerName: dancerName!, dancerVideo: dancerVideo!, description: description!)
-                        dancers.append(dancer)
-                        
+                            dancerImage = image
                         }
+                    }
+                    
+                    let dancer = Dancer(dancerLogo: dancerImage, dancerName: dancerName!, dancerVideo: dancerVideo!, description: description!)
+                    dancers.append(dancer)
                 }
             }
         }
         return dancers
     }
-    
-    
-    
-    
 }

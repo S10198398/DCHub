@@ -10,11 +10,12 @@ import UIKit
 class CarousellCellCollectionViewCell: UICollectionViewCell {
 
     
-    @IBOutlet weak var videoPlayer: VideoPlayer!
+   // @IBOutlet weak var videoPlayer: VideoPlayer!
     
     @IBOutlet weak var dancerName: UILabel!
-    
     @IBOutlet weak var dancerLogo: UIImageView!
+    
+    
     
     var dancer:Dancer!
     {
@@ -28,12 +29,12 @@ class CarousellCellCollectionViewCell: UICollectionViewCell {
         {
             dancerLogo.image = dancer.dancerLogo
             dancerName.text = dancer.dancerName
-            videoPlayer.playVideoWithFileName(dancer.dancerVideo, ofType: "mp4")
+          //  videoPlayer.playVideoWithFileName(dancer.dancerVideo, ofType: "mp4")
         }
         else{
             dancerLogo.image = nil
-            dancerName.text = nil
-            videoPlayer = nil
+            dancerName.text = "Hello"
+        //    videoPlayer = nil
         }
         
     }

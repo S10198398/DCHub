@@ -10,12 +10,18 @@ import UIKit
 class LocalPicksViewController: UIViewController {
 
     @IBOutlet weak var carousellCollectionView: UICollectionView!
-    
+
     var carousellDancers = Dancer.fetchCarousell()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         carousellCollectionView.dataSource = self
+        for carousell in carousellDancers
+        {
+            
+            print(carousell.dancerName)
+        }
         
         // Do any additional setup after loading the view.
     }
