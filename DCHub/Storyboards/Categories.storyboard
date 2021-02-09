@@ -273,7 +273,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="HHB-Uv-1U0"/>
                     <connections>
-                        <outlet property="accessoryTable" destination="dL0-dp-vxh" id="eNL-mQ-5oS"/>
+                        <outlet property="accessoryTable" destination="dL0-dp-vxh" id="peM-6s-43u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Nw-o5-E9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

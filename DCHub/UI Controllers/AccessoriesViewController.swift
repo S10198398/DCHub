@@ -9,7 +9,7 @@ import UIKit
 
 class AccessoriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-    @IBOutlet var accessoryTable:UITableView!
+    @IBOutlet var accessoryTable: UITableView!
     
     var accessories = [Accessory]()
     
