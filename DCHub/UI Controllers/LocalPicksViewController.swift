@@ -6,22 +6,23 @@
 //
 
 import UIKit
-
 class LocalPicksViewController: UIViewController {
 
     @IBOutlet weak var carousellCollectionView: UICollectionView!
-
-    var carousellDancers = Dancer.fetchCarousell()
     
+    
+    
+    var carousellDancers = Dancer.fetchCarousell()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         carousellCollectionView.dataSource = self
-        for carousell in carousellDancers
+        for dancer in carousellDancers
         {
-            
-            print(carousell.dancerName)
+            print("yikes")
         }
+       
+        
         
         // Do any additional setup after loading the view.
     }
@@ -31,6 +32,9 @@ class LocalPicksViewController: UIViewController {
 }
 extension LocalPicksViewController: UICollectionViewDataSource
 {
+    
+    
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
