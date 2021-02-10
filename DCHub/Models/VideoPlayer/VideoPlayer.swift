@@ -36,15 +36,11 @@ class VideoPlayer: UIView {
         view.layer.addSublayer(playerLayer)
         
     }
-    func playVideoWithFileName(_ url: String, ofType: String)
+    func playVideoWithFileName(_ url: String)
     {
         guard let videoUrl = URL(string: url) else { return  }
         let playerItem = AVPlayerItem(url: videoUrl)
         player?.replaceCurrentItem(with: playerItem)
         player?.play()
-    }
-    func stopVideo()
-    {
-        
     }
 }

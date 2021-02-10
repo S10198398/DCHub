@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 
 class CarousellCellCollectionViewCell: UICollectionViewCell {
@@ -28,6 +30,7 @@ class CarousellCellCollectionViewCell: UICollectionViewCell {
         {
             
             dancerName.text = dancer.dancerName
+            dancerLogo.sd_setImage(with: URL(string: dancer.dancerLogo))
           //  videoPlayer.playVideoWithFileName(dancer.dancerVideo, ofType: "mp4")
         }
         else{

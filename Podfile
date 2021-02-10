@@ -10,6 +10,8 @@ target 'DCHub' do
   pod 'Firebase/Storage'
   pod 'Firebase/Firestore'
   pod 'youtube-ios-player-helper'
+  platform :ios, '8.0'
+  pod 'SDWebImage', '~> 5.0'
   
 
   target 'DCHubTests' do

@@ -323,15 +323,17 @@ PODS:
   - nanopb (2.30907.0):
     - nanopb/decode (= 2.30907.0)
     - nanopb/encode (= 2.30907.0)
-  - nanopb/decode (2.30907.0)
-  - nanopb/encode (2.30907.0)
   - PromisesObjC (1.2.12)
+  - SDWebImage (5.9.5):
+    - SDWebImage/Core (= 5.9.5)
+  - SDWebImage/Core (5.9.5)
   - youtube-ios-player-helper (1.0.2)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - Firebase/Storage
+  - SDWebImage (~> 5.0)
   - youtube-ios-player-helper
 
 SPEC REPOS:
@@ -354,6 +356,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - SDWebImage
     - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
@@ -375,8 +378,9 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
   youtube-ios-player-helper: 40b96e52c22445f0fdc43731cefa32c67075ff81
 
-PODFILE CHECKSUM: 9edcaae20273e97c2d1b1b6e7d13257f78ffcb7d
+PODFILE CHECKSUM: 09c33751b56a4ac114370e233479e007f69f2072
 
 COCOAPODS: 1.10.0
