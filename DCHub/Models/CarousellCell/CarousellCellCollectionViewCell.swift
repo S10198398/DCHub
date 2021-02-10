@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class CarousellCellCollectionViewCell: UICollectionViewCell {
 
     
@@ -14,8 +15,6 @@ class CarousellCellCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var dancerName: UILabel!
     @IBOutlet weak var dancerLogo: UIImageView!
-    
-    
     
     var dancer:Dancer!
     {
@@ -27,7 +26,7 @@ class CarousellCellCollectionViewCell: UICollectionViewCell {
     {
         if dancer != nil
         {
-            dancerLogo.image = dancer.dancerLogo
+            
             dancerName.text = dancer.dancerName
           //  videoPlayer.playVideoWithFileName(dancer.dancerVideo, ofType: "mp4")
         }

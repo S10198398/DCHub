@@ -45,11 +45,7 @@ class LocalPicksViewController: UIViewController {
                     let dancerName = data["dancerName"] as? String
                     let dancerVideo = data["dancerVideo"] as? String
                     let description = data["description"] as? String
-                    var dancerImage = UIImage()
-                    self.downloadImage(urlImage: dancerLogo) { (image) in
-                        dancerImage = image!
-                    }
-                    let dancer = Dancer(dancerLogo: dancerImage, dancerName: dancerName!, dancerVideo: dancerVideo!, description: description!)
+                    let dancer = Dancer(dancerLogo: dancerLogo!, dancerName: dancerName!, dancerVideo: dancerVideo!, description: description!)
                     self.carousellDancers.append(dancer)
 
                 }
@@ -57,19 +53,6 @@ class LocalPicksViewController: UIViewController {
             }
         }
     }
-    func downloadImage(urlImage : String?, complete: ((UIImage?)->Void)? = nil)
-    {
-
-        let url = URL(string: urlImage!)
-        let urlRequest = URLRequest(url: url!)
-        let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
-            if let data = data {
-               complete?(UIImage(data: data))
-            }
-        }
-        task.resume()
-    }
-    
     
 }
 extension LocalPicksViewController: UICollectionViewDataSource
