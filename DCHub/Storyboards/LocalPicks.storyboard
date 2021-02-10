@@ -51,20 +51,31 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQu-Nn-9bc" customClass="VideoPlayer" customModule="DCHub" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="62" width="358" height="192"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="192" id="gzn-RY-RAj"/>
+                                                        <constraint firstAttribute="width" constant="358" id="tPa-VW-s1i"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="S9l-iP-iKf" secondAttribute="bottom" constant="208" id="53H-Od-m3K"/>
-                                                <constraint firstItem="S9l-iP-iKf" firstAttribute="top" secondItem="aJT-Lf-3DQ" secondAttribute="top" constant="11" id="AMY-kV-IXb"/>
-                                                <constraint firstItem="w0V-OL-9qI" firstAttribute="leading" secondItem="S9l-iP-iKf" secondAttribute="trailing" constant="19" id="Bvh-a2-ZSa"/>
-                                                <constraint firstItem="S9l-iP-iKf" firstAttribute="leading" secondItem="aJT-Lf-3DQ" secondAttribute="leading" constant="25" id="DFJ-DH-bwi"/>
-                                                <constraint firstItem="w0V-OL-9qI" firstAttribute="top" secondItem="aJT-Lf-3DQ" secondAttribute="top" constant="22" id="ctr-Hg-Qdc"/>
-                                                <constraint firstAttribute="bottom" secondItem="w0V-OL-9qI" secondAttribute="bottom" constant="219" id="tP9-3I-jNl"/>
-                                                <constraint firstAttribute="trailing" secondItem="w0V-OL-9qI" secondAttribute="trailing" constant="87" id="uqP-9D-ECX"/>
+                                                <constraint firstAttribute="trailing" secondItem="w0V-OL-9qI" secondAttribute="trailing" constant="87" id="2db-OL-VyV"/>
+                                                <constraint firstAttribute="bottom" secondItem="iQu-Nn-9bc" secondAttribute="bottom" constant="8" id="BjF-LS-A1w"/>
+                                                <constraint firstItem="iQu-Nn-9bc" firstAttribute="leading" secondItem="aJT-Lf-3DQ" secondAttribute="leading" constant="8" id="KQG-Rw-jhW"/>
+                                                <constraint firstItem="S9l-iP-iKf" firstAttribute="top" secondItem="aJT-Lf-3DQ" secondAttribute="top" constant="11" id="N3O-Vj-7l9"/>
+                                                <constraint firstItem="iQu-Nn-9bc" firstAttribute="top" secondItem="S9l-iP-iKf" secondAttribute="bottom" constant="8" id="W9C-N4-Hho"/>
+                                                <constraint firstItem="S9l-iP-iKf" firstAttribute="leading" secondItem="aJT-Lf-3DQ" secondAttribute="leading" constant="25" id="al1-Kl-BZw"/>
+                                                <constraint firstItem="w0V-OL-9qI" firstAttribute="leading" secondItem="S9l-iP-iKf" secondAttribute="trailing" constant="19" id="fQN-Bn-cvJ"/>
+                                                <constraint firstItem="w0V-OL-9qI" firstAttribute="top" secondItem="aJT-Lf-3DQ" secondAttribute="top" constant="22" id="u9t-wV-IKB"/>
+                                                <constraint firstAttribute="trailing" secondItem="iQu-Nn-9bc" secondAttribute="trailing" constant="8" id="z1b-0i-ggg"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="dancerLogo" destination="S9l-iP-iKf" id="Pmo-sv-bPL"/>
                                             <outlet property="dancerName" destination="w0V-OL-9qI" id="bRz-Xt-Gbq"/>
+                                            <outlet property="videoPlayer" destination="iQu-Nn-9bc" id="3UC-Lu-Ryg"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

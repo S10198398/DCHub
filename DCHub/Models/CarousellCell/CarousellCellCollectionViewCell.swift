@@ -13,8 +13,7 @@ import SDWebImage
 class CarousellCellCollectionViewCell: UICollectionViewCell {
 
     
-   // @IBOutlet weak var videoPlayer: VideoPlayer!
-    
+    @IBOutlet weak var videoPlayer: VideoPlayer!
     @IBOutlet weak var dancerName: UILabel!
     @IBOutlet weak var dancerLogo: UIImageView!
     
@@ -28,15 +27,15 @@ class CarousellCellCollectionViewCell: UICollectionViewCell {
     {
         if dancer != nil
         {
-            
             dancerName.text = dancer.dancerName
             dancerLogo.sd_setImage(with: URL(string: dancer.dancerLogo))
-          //  videoPlayer.playVideoWithFileName(dancer.dancerVideo, ofType: "mp4")
+            print(dancer.dancerVideo)
+            videoPlayer.playVideoWithFileName(dancer.dancerVideo)
         }
         else{
             dancerLogo.image = nil
             dancerName.text = "Hello"
-        //    videoPlayer = nil
+            videoPlayer = nil
         }
         
     }

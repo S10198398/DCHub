@@ -25,6 +25,7 @@ class VideoPlayer: UIView {
         let viewFromXib = Bundle.main.loadNibNamed("VideoPlayer", owner: self, options: nil)![0] as! UIView
         viewFromXib.frame = self.bounds
         addSubview(viewFromXib)
+        addPlayerToView(self.vwPlayer)
     }
 
     fileprivate func addPlayerToView(_ view:UIView)
