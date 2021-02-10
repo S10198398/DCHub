@@ -14,6 +14,7 @@ class LocalPicksViewController: UIViewController {
     
     //Outlets
     @IBOutlet weak var carousellCollectionView: UICollectionView!
+    @IBOutlet weak var carousellPageControl : UIPageControl!
     
     
     //Variables
@@ -26,7 +27,8 @@ class LocalPicksViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        carousellCollectionView.delegate = self
         carousellCollectionView.dataSource = self
         
         // Do any additional setup after loading the view.
@@ -49,14 +51,14 @@ class LocalPicksViewController: UIViewController {
                     self.carousellDancers.append(dancer)
 
                 }
+                self.carousellPageControl.numberOfPages = self.carousellDancers.count
                 self.carousellCollectionView.reloadData()
             }
         }
     }
     
 }
-extension LocalPicksViewController: UICollectionViewDataSource
-{
+extension LocalPicksViewController: UICollectionViewDataSource{
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -67,11 +69,13 @@ extension LocalPicksViewController: UICollectionViewDataSource
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "CarousellCellCollectionViewCell", for: indexPath) as! CarousellCellCollectionViewCell
-        
         let dancer = carousellDancers[indexPath.item]
-        
         cell.dancer = dancer
-        
         return cell
     }
+    
+    
+
+    
 }
+

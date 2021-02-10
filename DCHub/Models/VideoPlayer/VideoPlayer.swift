@@ -7,10 +7,13 @@
 
 import UIKit
 import AVKit
+import AVFoundation
 class VideoPlayer: UIView {
     @IBOutlet weak var vwPlayer:UIView!
     
     var player: AVPlayer?
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -43,5 +46,6 @@ class VideoPlayer: UIView {
         let playerItem = AVPlayerItem(url: videoUrl)
         player?.replaceCurrentItem(with: playerItem)
         player?.play()
+        
     }
 }
