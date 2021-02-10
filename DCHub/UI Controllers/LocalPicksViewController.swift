@@ -6,35 +6,75 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
+
 class LocalPicksViewController: UIViewController {
 
+    
+    //Outlets
     @IBOutlet weak var carousellCollectionView: UICollectionView!
     
     
+    //Variables
+    var carousellDancers = [Dancer]()
     
-    var carousellDancers = Dancer.fetchCarousell()
+    
+    
+    let db = Firestore.firestore()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         carousellCollectionView.dataSource = self
-        for dancer in carousellDancers
-        {
-            print("yikes")
-        }
-       
-        
         
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        db.collection("Carousell").getDocuments { (querySnapshot, err) in
+            if let err = err{
+                //Handling errors
+                print("Could not retrieve documents:  \(err)" )
+            }
+            else{
+                for document in querySnapshot!.documents
+                {
+                    let data = document.data()
+                    let dancerLogo = data["dancerLogo"] as? String
+                    let dancerName = data["dancerName"] as? String
+                    let dancerVideo = data["dancerVideo"] as? String
+                    let description = data["description"] as? String
+                    var dancerImage = UIImage()
+                    self.downloadImage(urlImage: dancerLogo) { (image) in
+                        dancerImage = image!
+                    }
+                    let dancer = Dancer(dancerLogo: dancerImage, dancerName: dancerName!, dancerVideo: dancerVideo!, description: description!)
+                    self.carousellDancers.append(dancer)
+
+                }
+                self.carousellCollectionView.reloadData()
+            }
+        }
+    }
+    func downloadImage(urlImage : String?, complete: ((UIImage?)->Void)? = nil)
+    {
+
+        let url = URL(string: urlImage!)
+        let urlRequest = URLRequest(url: url!)
+        let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+            if let data = data {
+               complete?(UIImage(data: data))
+            }
+        }
+        task.resume()
+    }
     
     
 }
 extension LocalPicksViewController: UICollectionViewDataSource
 {
-    
-    
-    
+
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
