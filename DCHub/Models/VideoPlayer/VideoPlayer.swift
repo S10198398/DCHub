@@ -11,7 +11,8 @@ import AVFoundation
 class VideoPlayer: UIView {
     @IBOutlet weak var vwPlayer:UIView!
     
-    var player: AVPlayer?
+    var player: AVQueuePlayer!
+    var looper: AVPlayerLooper!
     
     
     override init(frame: CGRect) {
@@ -23,6 +24,8 @@ class VideoPlayer: UIView {
         commonInit()
     }
     
+
+    
     fileprivate func commonInit()
     {
         let viewFromXib = Bundle.main.loadNibNamed("VideoPlayer", owner: self, options: nil)![0] as! UIView
@@ -33,7 +36,7 @@ class VideoPlayer: UIView {
 
     fileprivate func addPlayerToView(_ view:UIView)
     {
-        player = AVPlayer()
+        player = AVQueuePlayer()
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = self.bounds
         playerLayer.videoGravity = .resizeAspectFill
@@ -44,8 +47,9 @@ class VideoPlayer: UIView {
     {
         guard let videoUrl = URL(string: url) else { return  }
         let playerItem = AVPlayerItem(url: videoUrl)
-        player?.replaceCurrentItem(with: playerItem)
-        player?.play()
+        looper = AVPlayerLooper(player: player, templateItem: playerItem)
+        player.replaceCurrentItem(with: playerItem)
         
     }
+    
 }

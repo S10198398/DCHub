@@ -23,6 +23,7 @@ class CarousellCellCollectionViewCell: UICollectionViewCell {
             self.updateUI()
         }
     }
+    
     func updateUI()
     {
         if dancer != nil
@@ -31,6 +32,8 @@ class CarousellCellCollectionViewCell: UICollectionViewCell {
             dancerLogo.sd_setImage(with: URL(string: dancer.dancerLogo))
             print(dancer.dancerVideo)
             videoPlayer.playVideoWithFileName(dancer.dancerVideo)
+            let mute = UITapGestureRecognizer(target: self, action: #selector(self.muteVideo))
+            videoPlayer.addGestureRecognizer(mute)
         }
         else{
             dancerLogo.image = nil
@@ -38,6 +41,17 @@ class CarousellCellCollectionViewCell: UICollectionViewCell {
             videoPlayer = nil
         }
         
+    }
+    @objc func muteVideo(sender : UITapGestureRecognizer)
+    {
+        if videoPlayer.player?.isMuted == true
+        {
+            videoPlayer.player?.isMuted = false
+        }
+        else
+        {
+            videoPlayer.player?.isMuted = true
+        }
     }
 }
 

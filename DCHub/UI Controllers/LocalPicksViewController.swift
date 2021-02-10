@@ -75,7 +75,24 @@ extension LocalPicksViewController: UICollectionViewDataSource{
     }
     
     
+}
+extension LocalPicksViewController:UICollectionViewDelegate
+{
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offSet = scrollView.contentOffset.x
+        let width = scrollView.frame.width
+        let horizontalCenter = width / 2
 
-    
+        carousellPageControl.currentPage = Int(offSet + horizontalCenter) / Int(width)
+    }
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        print("ended")
+        (cell as? CarousellCellCollectionViewCell)?.videoPlayer.player?.play()
+        (cell as? CarousellCellCollectionViewCell)?.videoPlayer.player?.isMuted = true
+    }
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        print("started")
+        (cell as? CarousellCellCollectionViewCell)?.videoPlayer.player?.play()
+       }
 }
 
