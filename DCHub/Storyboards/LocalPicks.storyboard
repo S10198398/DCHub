@@ -88,12 +88,31 @@
                                     <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="wK4-Q9-xAq">
                                         <rect key="frame" x="111" y="324" width="192" height="28"/>
                                     </pageControl>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Hc-mE-rqW">
+                                        <rect key="frame" x="8" y="408" width="398" height="353"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hok-F0-NrK">
+                                                <rect key="frame" x="0.0" y="28" width="398" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hok-F0-NrK" id="5sB-2H-q5N">
+                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1137254902" green="0.20784313730000001" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.1137254902" green="0.2470588235" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="wK4-Q9-xAq" firstAttribute="leading" secondItem="FZf-9T-Yta" secondAttribute="leading" constant="111" id="4Ky-97-wDB"/>
                                     <constraint firstItem="FZf-9T-Yta" firstAttribute="trailing" secondItem="wK4-Q9-xAq" secondAttribute="trailing" constant="111" id="Baa-wi-y6f"/>
+                                    <constraint firstItem="7Hc-mE-rqW" firstAttribute="width" secondItem="Ykz-gg-Xpa" secondAttribute="width" multiplier="0.961353" id="Vtd-sr-eC6"/>
+                                    <constraint firstItem="FZf-9T-Yta" firstAttribute="trailing" secondItem="7Hc-mE-rqW" secondAttribute="trailing" constant="8" id="dpb-jx-0fZ"/>
+                                    <constraint firstItem="7Hc-mE-rqW" firstAttribute="top" secondItem="wK4-Q9-xAq" secondAttribute="bottom" constant="56" id="n5o-gJ-d93"/>
+                                    <constraint firstItem="7Hc-mE-rqW" firstAttribute="leading" secondItem="FZf-9T-Yta" secondAttribute="leading" constant="8" id="srj-HL-Tp5"/>
+                                    <constraint firstItem="FZf-9T-Yta" firstAttribute="bottom" secondItem="7Hc-mE-rqW" secondAttribute="bottom" constant="8" id="vZx-Wf-vq7"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="MoX-RR-fq5"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="FZf-9T-Yta"/>

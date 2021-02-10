@@ -34,6 +34,7 @@ class CarousellCellCollectionViewCell: UICollectionViewCell {
             videoPlayer.playVideoWithFileName(dancer.dancerVideo)
             let mute = UITapGestureRecognizer(target: self, action: #selector(self.muteVideo))
             videoPlayer.addGestureRecognizer(mute)
+            videoPlayer.player.isMuted = true
         }
         else{
             dancerLogo.image = nil
@@ -46,10 +47,12 @@ class CarousellCellCollectionViewCell: UICollectionViewCell {
     {
         if videoPlayer.player?.isMuted == true
         {
+            videoPlayer.player.play()
             videoPlayer.player?.isMuted = false
         }
         else
         {
+            videoPlayer.player.pause()
             videoPlayer.player?.isMuted = true
         }
     }
