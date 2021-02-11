@@ -159,7 +159,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Mqb-bc-WM2"/>
                     <connections>
-                        <outlet property="carousellCollectionView" destination="Dei-06-CeZ" id="PoZ-mi-ZwE"/>
+                        <outlet property="carousellCollectionView" destination="Dei-06-CeZ" id="XwA-VN-tEf"/>
                         <outlet property="carousellPageControl" destination="cLf-tg-hFn" id="nz3-uQ-Yo6"/>
                     </connections>
                 </viewController>

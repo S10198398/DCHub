@@ -55,6 +55,8 @@
 		F15A6BA025C0445E00DD2558 /* DCHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A6B9F25C0445E00DD2558 /* DCHubTests.swift */; };
 		F15A6BAB25C0445E00DD2558 /* DCHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A6BAA25C0445E00DD2558 /* DCHubUITests.swift */; };
 		F15B7AC325D4BA4700AE135E /* LocalPicksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B7AC225D4BA4700AE135E /* LocalPicksCell.swift */; };
+		F15B7AC925D4D01C00AE135E /* OurPicksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B7AC825D4D01C00AE135E /* OurPicksCell.swift */; };
+		F15B7AD125D4D04500AE135E /* ClothesSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B7AD025D4D04500AE135E /* ClothesSet.swift */; };
 		F175429E25C7FC94007AB864 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F175429D25C7FC94007AB864 /* Profile.storyboard */; };
 		F1E98E7825D29AF00095A7A6 /* OurPicks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E98E7725D29AF00095A7A6 /* OurPicks.storyboard */; };
 		F1E98E7D25D29AF90095A7A6 /* LocalPicks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E98E7C25D29AF90095A7A6 /* LocalPicks.storyboard */; };
@@ -143,6 +145,8 @@
 		F15A6BAA25C0445E00DD2558 /* DCHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCHubUITests.swift; sourceTree = "<group>"; };
 		F15A6BAC25C0445E00DD2558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F15B7AC225D4BA4700AE135E /* LocalPicksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPicksCell.swift; sourceTree = "<group>"; };
+		F15B7AC825D4D01C00AE135E /* OurPicksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPicksCell.swift; sourceTree = "<group>"; };
+		F15B7AD025D4D04500AE135E /* ClothesSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesSet.swift; sourceTree = "<group>"; };
 		F175429D25C7FC94007AB864 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		F1E98E7725D29AF00095A7A6 /* OurPicks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OurPicks.storyboard; sourceTree = "<group>"; };
 		F1E98E7C25D29AF90095A7A6 /* LocalPicks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocalPicks.storyboard; sourceTree = "<group>"; };
@@ -395,6 +399,15 @@
 			path = DCHubUITests;
 			sourceTree = "<group>";
 		};
+		F15B7AC725D4CFFE00AE135E /* OurPicksCell */ = {
+			isa = PBXGroup;
+			children = (
+				F15B7AC825D4D01C00AE135E /* OurPicksCell.swift */,
+				F15B7AD025D4D04500AE135E /* ClothesSet.swift */,
+			);
+			path = OurPicksCell;
+			sourceTree = "<group>";
+		};
 		F175429125C7FC20007AB864 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,6 +425,7 @@
 		F1F9245725D2B1CD000A311F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F15B7AC725D4CFFE00AE135E /* OurPicksCell */,
 				F1F9246625D2B200000A311F /* VideoPlayer */,
 				F1F9246025D2B1F8000A311F /* CarousellCell */,
 				F1F9245B25D2B1DE000A311F /* Dancer.swift */,
@@ -716,6 +730,7 @@
 				0E18089425D189470077F220 /* BottomsCollectionViewCell.swift in Sources */,
 				0E18084925D1623D0077F220 /* HatsViewController.swift in Sources */,
 				F130D21D25C05BB8003246E9 /* CategoriesViewController.swift in Sources */,
+				F15B7AD125D4D04500AE135E /* ClothesSet.swift in Sources */,
 				0E18088625D1891C0077F220 /* HatsCollectionViewCell.swift in Sources */,
 				F15B7AC325D4BA4700AE135E /* LocalPicksCell.swift in Sources */,
 				0E18089B25D1898D0077F220 /* OuterwearTableViewCell.swift in Sources */,
@@ -723,6 +738,7 @@
 				0E18087F25D188A40077F220 /* HatsTableViewCell.swift in Sources */,
 				0E1808A225D189A80077F220 /* OuterwearCollectionViewCell.swift in Sources */,
 				0E18084425D162240077F220 /* TopsViewController.swift in Sources */,
+				F15B7AC925D4D01C00AE135E /* OurPicksCell.swift in Sources */,
 				0E18087825D188880077F220 /* TopsCollectionViewCell.swift in Sources */,
 				F130D22225C05BD9003246E9 /* HomePageViewController.swift in Sources */,
 				F15A6B8825C0445D00DD2558 /* SceneDelegate.swift in Sources */,
