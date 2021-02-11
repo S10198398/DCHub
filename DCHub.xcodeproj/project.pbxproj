@@ -54,6 +54,7 @@
 		F15A6B9525C0445E00DD2558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15A6B9325C0445E00DD2558 /* LaunchScreen.storyboard */; };
 		F15A6BA025C0445E00DD2558 /* DCHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A6B9F25C0445E00DD2558 /* DCHubTests.swift */; };
 		F15A6BAB25C0445E00DD2558 /* DCHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A6BAA25C0445E00DD2558 /* DCHubUITests.swift */; };
+		F15B7AC325D4BA4700AE135E /* LocalPicksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B7AC225D4BA4700AE135E /* LocalPicksCell.swift */; };
 		F175429E25C7FC94007AB864 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F175429D25C7FC94007AB864 /* Profile.storyboard */; };
 		F1E98E7825D29AF00095A7A6 /* OurPicks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E98E7725D29AF00095A7A6 /* OurPicks.storyboard */; };
 		F1E98E7D25D29AF90095A7A6 /* LocalPicks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E98E7C25D29AF90095A7A6 /* LocalPicks.storyboard */; };
@@ -141,6 +142,7 @@
 		F15A6BA625C0445E00DD2558 /* DCHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15A6BAA25C0445E00DD2558 /* DCHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCHubUITests.swift; sourceTree = "<group>"; };
 		F15A6BAC25C0445E00DD2558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15B7AC225D4BA4700AE135E /* LocalPicksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPicksCell.swift; sourceTree = "<group>"; };
 		F175429D25C7FC94007AB864 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		F1E98E7725D29AF00095A7A6 /* OurPicks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OurPicks.storyboard; sourceTree = "<group>"; };
 		F1E98E7C25D29AF90095A7A6 /* LocalPicks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocalPicks.storyboard; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				F1F9246125D2B1F8000A311F /* CarousellCellCollectionViewCell.swift */,
+				F15B7AC225D4BA4700AE135E /* LocalPicksCell.swift */,
 			);
 			path = CarousellCell;
 			sourceTree = "<group>";
@@ -714,6 +717,7 @@
 				0E18084925D1623D0077F220 /* HatsViewController.swift in Sources */,
 				F130D21D25C05BB8003246E9 /* CategoriesViewController.swift in Sources */,
 				0E18088625D1891C0077F220 /* HatsCollectionViewCell.swift in Sources */,
+				F15B7AC325D4BA4700AE135E /* LocalPicksCell.swift in Sources */,
 				0E18089B25D1898D0077F220 /* OuterwearTableViewCell.swift in Sources */,
 				F130D22C25C05C18003246E9 /* OurPicksViewController.swift in Sources */,
 				0E18087F25D188A40077F220 /* HatsTableViewCell.swift in Sources */,

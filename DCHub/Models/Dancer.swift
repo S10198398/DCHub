@@ -15,13 +15,19 @@ class Dancer
     var dancerLogo = ""
     var dancerName = ""
     var dancerVideo = ""
-    var description = ""
+    var songDescription = ""
+    var dancerDescription = ""
+    var instagram = ""
+    
         
-    init(dancerLogo:String, dancerName:String, dancerVideo:String, description:String) {
+    init(dancerLogo:String, dancerName:String, dancerVideo:String, songDescription:String, dancerDescription:String, instagram:String) {
         self.dancerLogo = dancerLogo
         self.dancerName = dancerName
         self.dancerVideo = dancerVideo
-        self.description = description
+        self.songDescription = songDescription
+        self.dancerDescription = dancerDescription
+        self.instagram = instagram
+        
         
     }
     

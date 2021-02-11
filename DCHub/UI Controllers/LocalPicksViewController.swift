@@ -34,7 +34,7 @@ class LocalPicksViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        db.collection("Carousell").getDocuments { (querySnapshot, err) in
+        db.collection("Carousell").getDocuments { (querySnapshot, err) in  //Get data for dancer info
             if let err = err{
                 //Handling errors
                 print("Could not retrieve documents:  \(err)" )
@@ -46,8 +46,10 @@ class LocalPicksViewController: UIViewController {
                     let dancerLogo = data["dancerLogo"] as? String
                     let dancerName = data["dancerName"] as? String
                     let dancerVideo = data["dancerVideo"] as? String
-                    let description = data["description"] as? String
-                    let dancer = Dancer(dancerLogo: dancerLogo!, dancerName: dancerName!, dancerVideo: dancerVideo!, description: description!)
+                    let songDescription = data["songDescription"] as? String
+                    let dancerDescription = data["dancerDescription"] as? String
+                    let instagram = data["instagram"] as? String
+                    let dancer = Dancer(dancerLogo: dancerLogo!, dancerName: dancerName!, dancerVideo: dancerVideo!, songDescription: songDescription!, dancerDescription: dancerDescription!, instagram: instagram!)
                     self.carousellDancers.append(dancer)
 
                 }
@@ -56,7 +58,6 @@ class LocalPicksViewController: UIViewController {
             }
         }
     }
-    
 }
 extension LocalPicksViewController: UICollectionViewDataSource{
 
